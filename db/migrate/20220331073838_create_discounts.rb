@@ -1,7 +1,6 @@
 class CreateDiscounts < ActiveRecord::Migration
   def change
     create_table :discounts do |t|
-      t.string :code
       t.integer :discount_type
       t.integer :quantity
       t.integer :value
