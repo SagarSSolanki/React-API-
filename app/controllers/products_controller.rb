@@ -7,12 +7,12 @@ class ProductsController < ApplicationController
   end
 
   def update 
-      if @product.update(price: params[:price])
-        render json: @product
-      else
-        render json: @product.errors, status: 422
-      end
+    if @product.update(price: params[:price])
+      render json: @product
+    else
+      render json: @product.errors, status: 422
     end
+  end
 
   private
 
